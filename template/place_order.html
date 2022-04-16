@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Placing Order Form</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div class="form">
+    <form method="POST" action="form.php">
+        <h1>Place Order</h1>
+        <table>
+            <tr>
+                <td>
+                    <label for="id">Customer Id:</label><br>
+                    <input type="text" name="id" placeholder="John Doe" id="">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="cname">Customer Name:</label><br>
+                    <input type="text" name="cname" placeholder="John Doe" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cmpname">Company Name:</label><br>
+                    <input type="text" name="cmpname" placeholder="Sunlight Solar Power" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="otype">Order Type:</label><br>
+                    <select name="otype" type="text">
+                          <option value="Shared">Shared</option>
+                          <option value="Dedicated">Dedicated</option>
+                          <option value="General">General</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="kwh">Power Required:</label><br>
+                    <input type="int" name="kwh" placeholder="10kw" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="location">Location:</label><br>
+                    <input type="text" name="location" placeholder="Madhya Pradesh" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="Place Order">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
